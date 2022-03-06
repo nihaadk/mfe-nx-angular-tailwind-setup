@@ -1,3 +1,4 @@
+import { HomeModule } from './components/home/home.module';
 /*
  * This RemoteEntryModule is imported here to allow TS to find the Module during
  * compilation, allowing it to be included in the built bundle. This is required
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    HomeModule,
     RouterModule.forRoot(
       [
         {
