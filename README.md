@@ -61,11 +61,14 @@ npx nx generate @nrwl/angular:setup-mfe --appName=shell --port=4200 --mfeType=ho
   <summary>Generated Remote Apps/Projects</summary>
   
   This command will create your remote project that will later run in your shell. We create two of this App's/Projects with separate ports and names.
-  
+
+  Create Project with name app1:
+  &nbsp;
+
   ```
   npx nx g @nrwl/angular:app app1 --mfe --mfeType=remote --port=4201 --host=shell --routing=true
   ```
-  after this run for the tailwindcss config this command:
+  Config TailwindCSS in the app1 project:
 
   ```
   npx nx generate @nrwl/angular:setup-tailwind app1
@@ -73,11 +76,14 @@ npx nx generate @nrwl/angular:setup-mfe --appName=shell --port=4200 --mfeType=ho
 
   &nbsp;
 
+  Create Project with name app2:
+  &nbsp;
+
   ```
   npx nx g @nrwl/angular:app app2 --mfe --mfeType=remote --port=4202 --host=shell --routing=true
   ```
 
-  after this run for the tailwindcss config this command:
+  Config TailwindCSS in the app2 project:
 
   ```
   npx nx generate @nrwl/angular:setup-tailwind app2
