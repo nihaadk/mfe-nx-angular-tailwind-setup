@@ -2,20 +2,31 @@
 
 This project was generated using [Nx](https://nx.dev).
 
-## Steps
+&nbsp;
 
-## Create workspace (with app name shell is important for the second Step)
+# Steps
 
-```
+<details>
+&nbsp;
+  <summary>Create workspace</summary>
+  
+  Create workspace with app name shell is important for the second step
+  &nbsp;
+  ```
 npx create-nx-workspace@latest <WORKSPACE_NAME>
 ```
+</details>
 
-## Add TailwindCSS (shell is the name of you first generated application)
-
+<details>
+&nbsp;
+  <summary>Add TailwindCSS</summary>
+  
+  Add TailwindCSS (shell is the name of you first generated application)
+&nbsp;
 ```
 npx nx generate @nrwl/angular:setup-tailwind shell
 ```
-
+&nbsp;
 Add in "/apps/shell/src/app/app.component.html" this code:
 
 ```
@@ -31,4 +42,24 @@ Add in "/apps/shell/src/app/app.component.html" this code:
   </div>
 </header>
 ```
-# mfe-nx-angular-tailwind-setup
+
+</details>
+
+
+<details>
+&nbsp;
+  <summary>Make shell to host</summary>
+  
+  Transform shell app in host app
+&nbsp;
+```
+npx nx generate @nrwl/angular:setup-mfe --appName=shell --port=0 --mfeType=host --routing --no-interactive --dry-run
+```
+
+
+</details>
+
+
+
+
+
