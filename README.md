@@ -158,11 +158,28 @@ export class AppModule {}
 
 </details>
 
+
+
 <details>
   &nbsp;
-  <summary>Replace the npm start </summary>
+  <summary>Style you remote apps</summary>
   
-  Replace the npm start command with the npm run-many command.
+  Create Home module and component in "src/app/components/home" 
+
+  ```
+  nx run-many --target=serve --all --parallel
+  ```
+
+</details>
+
+
+
+
+<details>
+  &nbsp;
+  <summary>Replace npm start in package.json</summary>
+  
+  Replace the npm start command in the package.json with the nx command. Then can run shell with all remote apps parallel.
 
   ```
   nx run-many --target=serve --all --parallel
