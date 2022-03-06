@@ -98,7 +98,9 @@ npx nx g @nrwl/angular:app app2 --mfe --mfeType=remote --port=4202 --host=shell 
   </nav>
 </div>
 </header>
-<router-outlet></router-outlet>
+<main class="container mx-auto px-4">
+  <router-outlet></router-outlet>
+</main>
 ```
 
 and after this add routs in the app.module.ts
@@ -145,8 +147,8 @@ export class AppModule {}
   
   Replace the npm start command with the npm run-many command.
 
-```
-nx run-many --target=serve --all --parallel
-```
+  ```
+  nx run-many --target=serve --all --parallel
+  ```
 
 </details>
