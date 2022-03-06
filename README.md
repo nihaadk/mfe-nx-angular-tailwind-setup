@@ -65,12 +65,23 @@ npx nx generate @nrwl/angular:setup-mfe --appName=shell --port=4200 --mfeType=ho
   ```
   npx nx g @nrwl/angular:app app1 --mfe --mfeType=remote --port=4201 --host=shell --routing=true
   ```
+  after this run for the tailwindcss config this command:
 
-&nbsp;
+  ```
+  npx nx generate @nrwl/angular:setup-tailwind app1
+  ```
 
-```
-npx nx g @nrwl/angular:app app2 --mfe --mfeType=remote --port=4202 --host=shell --routing=true
-```
+  &nbsp;
+
+  ```
+  npx nx g @nrwl/angular:app app2 --mfe --mfeType=remote --port=4202 --host=shell --routing=true
+  ```
+
+  after this run for the tailwindcss config this command:
+
+  ```
+  npx nx generate @nrwl/angular:setup-tailwind app2
+  ```
 
 </details>
 
